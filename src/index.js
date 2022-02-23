@@ -1,6 +1,57 @@
 console.log("its working");
 const log = console.log;
 
+
+
+const pageBuild = (() => {
+
+    function createTab(name) {
+        const tab = document.createElement('li');
+        tab.classList.add('tab');
+        tab.setAttribute('data-tab-target', '#'+name);
+        tab.textContent = name;
+        tabsUl.appendChild(tab);
+        if (name == 'home') {
+            tab.classList.add('active');
+        }
+        return tab;
+    }
+
+    const container = document.getElementById('content');
+        const header = document.createElement('div');
+        header.classList.add('header');
+        container.appendChild(header);
+            //logo
+            const logo = document.createElement('img');
+            logo.classList.add('logo');
+            logo.src = '../src/images/tiger.png';
+            header.appendChild(logo);
+            //slogan
+            const slogan = document.createElement('h1');
+            slogan.textContent = 'Tiger of Mai';
+            header.appendChild(slogan);
+                
+            //tabs
+            const tabsDiv = document.createElement('div');
+            tabsDiv.classList.add('tabs');
+            container.appendChild(tabsDiv);
+                //ul
+                const tabsUl = document.createElement('ul');
+                tabsUl.classList.add('tabsList');
+                tabsDiv.appendChild(tabsUl);
+                    //li
+                    createTab('home');
+                    createTab('food');
+                    createTab('drinks');
+                    createTab('contact');
+                    
+                    
+
+
+})()
+
+
+
 const tabs = document.querySelectorAll('[data-tab-target]');
 const tabContent = document.querySelectorAll('[data-tab-content]');
 
@@ -16,6 +67,7 @@ tabs.forEach(tab => {
         tab.classList.add('active');
     })
 })
+
 
 
 //menu item object includes: name, description, price, category (food or drink)
