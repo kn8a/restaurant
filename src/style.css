@@ -1,0 +1,302 @@
+@font-face{
+    font-family: logo;
+    src: url('./fonts/Niagato.ttf'); 
+}
+
+body {
+    display: flex;
+    border: 0px blue solid;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fdead0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    max-width: 980px;
+    border: 0px red solid;
+    min-height: 100vh;
+    justify-content: space-between;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    border: 0px rgb(157, 245, 15) solid;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 14px;
+    
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+    font-family: logo;
+    font-weight: 500;
+    
+}
+
+.header img {
+    margin: 0;
+    padding: 0;
+    width: 130px;
+}
+
+.tabsList {
+    display: flex;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border-radius: 50px;
+    gap: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    max-width: fit-content;
+    align-self: center;
+    box-shadow: -1px 3px 11px -3px rgba(0,0,0,0.75);
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 200;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+
+.tab:hover {
+    background-color: #ffcf91;
+}
+
+.tab.active {
+    background-color: #ffcf91;
+    color: #bb6a00;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 12px;
+    flex: 1;
+    align-self: center;
+    border: 0px rgb(15, 88, 245) solid;
+    
+}
+
+.tab-cont {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    border: red solid 0px;
+    flex-direction: column;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    margin-top: 24px;
+    border-radius: 50px;
+    box-shadow: -1px 3px 11px -3px rgba(0,0,0,0.75);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.awardCont {
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    
+
+}
+
+.award {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border: blue 0px solid;
+    border-radius: 30px;
+    padding-right: 10px;
+    background-color: #fdead0;
+    box-shadow: -1px 3px 11px -3px rgba(0, 0, 0, 0.377);
+}
+
+.items {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    column-gap: 24px;
+    row-gap: 24px;
+    border: purple 0px solid;    
+}
+
+.item {
+    display: flex;
+    
+    min-width: 45%; 
+    max-width: 45%;
+    justify-items: center;
+    
+    background-color: #fdead0;
+    border-radius: 40px;
+    padding-right: 24px;
+
+    box-shadow: -1px 3px 11px -3px rgba(0, 0, 0, 0.377);
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.info p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    height: 2vh;
+    display: flex;
+    
+    border: 0px rgb(157, 245, 15) solid;
+    justify-items: center;
+    text-align: center;
+    margin-top: 8px;
+
+}
+
+
+
+.contact-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 24px;
+    border: purple 0px solid;    
+}
+
+.contact-item {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    justify-items: center; 
+    justify-content:space-around;
+    background-color: #fdead0;
+    border-radius: 40px;
+    padding: 24px;
+    width: 45%;
+    max-width: 45%;
+    box-shadow: -1px 3px 11px -3px rgba(0, 0, 0, 0.377);
+}
+
+.contact-item img {
+    align-self: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: -1px 3px 11px -3px rgba(0, 0, 0, 0.377);
+}
+
+
+
+.contact-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.contact-info p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.food-items {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 24px;
+    border: purple 0px solid;    
+}
+
+.food-item {
+    display: flex;
+    flex: 1;
+    min-width: 45%; 
+    max-width: 45%;
+    justify-items: center; 
+    justify-content: center;
+    background-color: #fdead0;
+    border-radius: 40px;
+    padding-right: 24px;
+    box-shadow: -1px 3px 11px -3px rgba(0, 0, 0, 0.377);
+    padding-bottom: 10px;
+
+}
+
+.food-item img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.food-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.food-info p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.home {
+    gap: 28px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: larger;
+}
+
+.home img {
+    width: 250px;
+    align-self: center;
+}

@@ -1,10 +1,10 @@
 export const drinksArray = [
-    {'t': 'Coffee', 'd': 'Freshly brewed colombian coffee', 'p': '$1.50', 'c': 'drink', 'i': './images/drinks/coffee.png'},
-    {'t': 'Black Tea', 'd': 'Freshly brewed English black tea', 'p': '$1.50', 'c': 'drink', 'i': './images/drinks/tea.png'},
-    {'t': 'Orange juice', 'd': 'Freshly squeezed Florida oranges', 'p': '$5', 'c': 'drink', 'i': './images/drinks/orange.png'},
-    {'t': 'Grape juice', 'd': 'Freshly pressed grapes', 'p': '$5', 'c': 'drink', 'i': './images/drinks/grape.png'},
-    {'t': 'Beer', 'd': 'Our homebrewed rich hoppy beer', 'p': '$9', 'c': 'drink', 'i': './images/drinks/beer.png'},
-    {'t': 'Sake', 'd': 'Select Japanese rice wine', 'p': '$12', 'c': 'drink', 'i': './images/drinks/sake.png'},
+    {'t': 'Coffee', 'd': 'Freshly brewed colombian coffee', 'p': '$1.50', 'c': 'drink', 'i': '../src/images/drinks/coffee.png'},
+    {'t': 'Black Tea', 'd': 'Freshly brewed English black tea', 'p': '$1.50', 'c': 'drink', 'i': '../src/images/drinks/tea.png'},
+    {'t': 'Orange juice', 'd': 'Freshly squeezed Florida oranges', 'p': '$5', 'c': 'drink', 'i': '../src/images/drinks/orange.png'},
+    {'t': 'Grape juice', 'd': 'Freshly pressed grapes', 'p': '$5', 'c': 'drink', 'i': '../src/images/drinks/grape.png'},
+    {'t': 'Beer', 'd': 'Our homebrewed rich hoppy beer', 'p': '$9', 'c': 'drink', 'i': '../src/images/drinks/beer.png'},
+    {'t': 'Sake', 'd': 'Select Japanese rice wine', 'p': '$12', 'c': 'drink', 'i': '../src/images/drinks/sake.png'},
 ]
 
 //menu item object includes: name, description, price, category (food or drink)
@@ -49,3 +49,8 @@ export function drinksBuilder(drinks) {
     }
     return;
 }
+
+
+//require
+//css-loader
+//file loader

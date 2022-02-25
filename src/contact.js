@@ -1,7 +1,7 @@
 export const contactArray = [
-    { 'location': 'Arizona (Main)', 'address': '4112 Elk Rd. Little Tucson, AZ, 85716', 'phone': '123-456-789', 'image': './images/locations/arizona.png'},
-    { 'location': 'New York', 'address': '4298 Davisson Street New York, NY, 10027', 'phone': '456-789-123', 'image': './images/locations/newyork.png'},
-    { 'location': 'Texas', 'address': '663 Beeghley Street Temple, TX, 76501', 'phone': '789-123-456', 'image': './images/locations/texas.png'},
+    { 'location': 'Arizona (Main)', 'address': '4112 Elk Rd. Little Tucson, AZ, 85716', 'phone': '123-456-789', 'image': '../src/images/locations/arizona.png'},
+    { 'location': 'New York', 'address': '4298 Davisson Street New York, NY, 10027', 'phone': '456-789-123', 'image': '../src/images/locations/newyork.png'},
+    { 'location': 'Texas', 'address': '663 Beeghley Street Temple, TX, 76501', 'phone': '789-123-456', 'image': '../src/images/locations/texas.png'},
 ]
 
 export function contactBuilder(drinks) {

@@ -34,7 +34,7 @@ export function homeBuilder() {
 
         //img
         const awardImg = document.createElement('img');
-        awardImg.src = './images/award.png';
+        awardImg.src = '../src/images/award.png';
         awardDiv.appendChild(awardImg);
 
         const awardInfoDiv = document.createElement('div');
@@ -60,7 +60,7 @@ export function homeBuilder() {
         citeName.textContent = ` - Mai.`;
         quote.appendChild(citeName);   
         
-        cookImg.src = './images/mai.png';
+        cookImg.src = '../src/images/mai.png';
         homeDiv.appendChild(cookImg);
     return;
 }
