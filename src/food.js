@@ -1,11 +1,19 @@
+import cheeselate from './images/food/cheeseplate.png';
+import salad from './images/food/salad.png';
+import mahi from './images/food/mahi.png';
+import lasagna from './images/food/lasagna.png';
+import paella from './images/food/paella.png';
+import steak from './images/food/steak.png';
+import salmon from './images/food/salmon.png';
+
 export const foodArray = [
-    {'t': 'World artisan cheese platter', 'd': 'A platter of chef selected Brie, Gouda, and Blue cheese.', 'p': '$16', 'c': 'food', 'i': '../src/images/meals/cheeseplate.png'},
-    {'t': 'Hearty Salad', 'd': 'Fresh and Organic veggies served with homemade ranch sauce. Includes: tomatoes, brocolli, lettuce, baby carrots, fresh olives', 'p': '$9', 'c': 'food', 'i': '../src/images/meals/salad.png'},
-    {'t': 'Mediterranean Mahi Mahi', 'd': 'Slice of buttery Mahi Mahi, served with fresh lemon and asparagus.', 'p': '$25', 'c': 'food', 'i': '../src/images/meals/mahi.png'},
-    {'t': "Tiger's favorite lasagna", 'd': "Grounded Kobe beef baked with chef's sauce, Ricotta and mozarella cheese layered with lasagna noodles, topped with permesean", 'p': '$18', 'c': 'food', 'i': '../src/images/meals/lasagna.png'},
-    {'t': 'Ultimate Paella', 'd': 'Herby rice cooked with New Zealand mussel, jumbo shrimp, calamari with special seasoning and saucy sauce.', 'p': '$48', 'c': 'food', 'i': '../src/images/meals/paella.png'},
-    {'t': 'Pan seared steak', 'd': 'Japanese A4 Wagyu Tenderloin beef steak cooked to perfection and served with potato fries, tomatoes and lettuce.', 'p': '$65', 'c': 'food', 'i': '../src/images/meals/steak.png'},
-    {'t': 'Wild Salmon', 'd': 'Slice of Wild caught salmon, lightly cooked on the outside and raw inside', 'p': '$32', 'c': 'food', 'i': '../src/images/meals/salmon.png'},   
+    {'t': 'World artisan cheese platter', 'd': 'A platter of chef selected Brie, Gouda, and Blue cheese.', 'p': '$16', 'c': 'food', 'i': cheeselate},
+    {'t': 'Hearty Salad', 'd': 'Fresh and Organic veggies served with homemade ranch sauce. Includes: tomatoes, brocolli, lettuce, baby carrots, fresh olives', 'p': '$9', 'c': 'food', 'i': salad},
+    {'t': 'Mediterranean Mahi Mahi', 'd': 'Slice of buttery Mahi Mahi, served with fresh lemon and asparagus.', 'p': '$25', 'c': 'food', 'i': mahi},
+    {'t': "Tiger's favorite lasagna", 'd': "Grounded Kobe beef baked with chef's sauce, Ricotta and mozarella cheese layered with lasagna noodles, topped with permesean", 'p': '$18', 'c': 'food', 'i': lasagna},
+    {'t': 'Ultimate Paella', 'd': 'Herby rice cooked with New Zealand mussel, jumbo shrimp, calamari with special seasoning and saucy sauce.', 'p': '$48', 'c': 'food', 'i': paella},
+    {'t': 'Pan seared steak', 'd': 'Japanese A4 Wagyu Tenderloin beef steak cooked to perfection and served with potato fries, tomatoes and lettuce.', 'p': '$65', 'c': 'food', 'i': steak},
+    {'t': 'Wild Salmon', 'd': 'Slice of Wild caught salmon, lightly cooked on the outside and raw inside', 'p': '$32', 'c': 'food', 'i': salmon},   
 ]
 
 //menu item object includes: name, description, price, category (food or drink)

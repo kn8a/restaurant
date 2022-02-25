@@ -3,6 +3,7 @@ import { foodArray, foodBuilder } from './food.js';
 import { contactArray, contactBuilder } from './contact.js';
 import { homeBuilder } from './home.js';
 import './style.css';
+import tiger from './images/tiger.png';
 
 const log = console.log;
 
@@ -55,7 +56,7 @@ const pageBuild = (() => {
             //logo
             const logo = document.createElement('img');
             logo.classList.add('logo');
-            logo.src = '../src/images/tiger.png';
+            logo.src = tiger;
             header.appendChild(logo);
             //slogan
             const slogan = document.createElement('h1');

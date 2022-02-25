@@ -1,3 +1,6 @@
+import awardImage from './images/award.png';
+import mai from './images/mai.png';
+
 export function homeBuilder() {
     const homeDiv = document.createElement('div');
     homeDiv.classList.add('home');
@@ -34,7 +37,7 @@ export function homeBuilder() {
 
         //img
         const awardImg = document.createElement('img');
-        awardImg.src = '../src/images/award.png';
+        awardImg.src = awardImage;
         awardDiv.appendChild(awardImg);
 
         const awardInfoDiv = document.createElement('div');
@@ -53,14 +56,14 @@ export function homeBuilder() {
         homeDiv.appendChild(quote);
 
         const cite = document.createElement('cite');
-        cite.textContent = `Food is romantic. Soul. It's about putting everything in your heart onto the plate. Hoping it's perceived well. Honestly, it's about passion. It's about love.`;
+        cite.textContent = `Food is romantic. It's about putting everything in your heart onto the plate. Hoping it's perceived well. Honestly, it's about passion. It's about love.`;
         quote.appendChild(cite);
 
         const citeName = document.createElement('p');
         citeName.textContent = ` - Mai.`;
         quote.appendChild(citeName);   
         
-        cookImg.src = '../src/images/mai.png';
+        cookImg.src = mai;
         homeDiv.appendChild(cookImg);
     return;
 }

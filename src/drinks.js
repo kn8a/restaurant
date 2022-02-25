@@ -1,10 +1,17 @@
+import coffee from './images/drinks/coffee.png';
+import tea from './images/drinks/tea.png';
+import orange from './images/drinks/orange.png';
+import grape from './images/drinks/grape.png';
+import beer from './images/drinks/beer.png';
+import sake from './images/drinks/sake.png';
+
 export const drinksArray = [
-    {'t': 'Coffee', 'd': 'Freshly brewed colombian coffee', 'p': '$1.50', 'c': 'drink', 'i': '../src/images/drinks/coffee.png'},
-    {'t': 'Black Tea', 'd': 'Freshly brewed English black tea', 'p': '$1.50', 'c': 'drink', 'i': '../src/images/drinks/tea.png'},
-    {'t': 'Orange juice', 'd': 'Freshly squeezed Florida oranges', 'p': '$5', 'c': 'drink', 'i': '../src/images/drinks/orange.png'},
-    {'t': 'Grape juice', 'd': 'Freshly pressed grapes', 'p': '$5', 'c': 'drink', 'i': '../src/images/drinks/grape.png'},
-    {'t': 'Beer', 'd': 'Our homebrewed rich hoppy beer', 'p': '$9', 'c': 'drink', 'i': '../src/images/drinks/beer.png'},
-    {'t': 'Sake', 'd': 'Select Japanese rice wine', 'p': '$12', 'c': 'drink', 'i': '../src/images/drinks/sake.png'},
+    {'t': 'Coffee', 'd': 'Freshly brewed colombian coffee', 'p': '$1.50', 'c': 'drink', 'i': coffee},
+    {'t': 'Black Tea', 'd': 'Freshly brewed English black tea', 'p': '$1.50', 'c': 'drink', 'i': tea},
+    {'t': 'Orange juice', 'd': 'Freshly squeezed Florida oranges', 'p': '$5', 'c': 'drink', 'i': orange},
+    {'t': 'Grape juice', 'd': 'Freshly pressed grapes', 'p': '$5', 'c': 'drink', 'i': grape},
+    {'t': 'Beer', 'd': 'Our homebrewed rich hoppy beer', 'p': '$9', 'c': 'drink', 'i': beer},
+    {'t': 'Sake', 'd': 'Select Japanese rice wine', 'p': '$12', 'c': 'drink', 'i': sake},
 ]
 
 //menu item object includes: name, description, price, category (food or drink)

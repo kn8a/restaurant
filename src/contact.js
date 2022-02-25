@@ -1,7 +1,12 @@
+import newyork from './images/locations/newyork.png';
+import arizona from './images/locations/arizona.png';
+import texas from './images/locations/texas.png';
+
+
 export const contactArray = [
-    { 'location': 'Arizona (Main)', 'address': '4112 Elk Rd. Little Tucson, AZ, 85716', 'phone': '123-456-789', 'image': '../src/images/locations/arizona.png'},
-    { 'location': 'New York', 'address': '4298 Davisson Street New York, NY, 10027', 'phone': '456-789-123', 'image': '../src/images/locations/newyork.png'},
-    { 'location': 'Texas', 'address': '663 Beeghley Street Temple, TX, 76501', 'phone': '789-123-456', 'image': '../src/images/locations/texas.png'},
+    { 'location': 'Arizona (Main)', 'address': '4112 Elk Rd. Little Tucson, AZ, 85716', 'phone': '123-456-789', 'image': arizona},
+    { 'location': 'New York', 'address': '4298 Davisson Street New York, NY, 10027', 'phone': '456-789-123', 'image': newyork},
+    { 'location': 'Texas', 'address': '663 Beeghley Street Temple, TX, 76501', 'phone': '789-123-456', 'image': texas},
 ]
 
 export function contactBuilder(drinks) {
