@@ -32,7 +32,7 @@ const pageBuild = (() => {
                     removeChilds(tabContDiv);
                     drinksBuilder(drinksArray);
                     break;
-                case 'contact':
+                case 'locations':
                     removeChilds(tabContDiv);
                     contactBuilder(contactArray);
                     break;
@@ -54,7 +54,7 @@ const pageBuild = (() => {
             //logo
             const logo = document.createElement('img');
             logo.classList.add('logo');
-            logo.src = '../src/images/tiger.png';
+            logo.src = './images/tiger.png';
             header.appendChild(logo);
             //slogan
             const slogan = document.createElement('h1');
@@ -73,8 +73,8 @@ const pageBuild = (() => {
                     createTab('home');
                     createTab('food');
                     createTab('drinks');
-                    createTab('contact');
-                    //homeBuilder();
+                    createTab('locations');
+                    
             //tabs content
             const tabContDiv = document.createElement('div');
             tabContDiv.classList.add('tab-cont');
@@ -85,6 +85,10 @@ const pageBuild = (() => {
             const footer = document.createElement('div');
             footer.classList.add('footer');
             container.appendChild(footer);
+            footer.textContent = 'kn8a'
+
+            homeBuilder();
+
 })()
 
 const tabs = document.querySelectorAll('[data-tab-target]');

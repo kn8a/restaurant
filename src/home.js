@@ -3,6 +3,10 @@ export function homeBuilder() {
     homeDiv.classList.add('home');
     const itmesParent = document.getElementById('tab-cont')
     itmesParent.appendChild(homeDiv);
+
+    const cookImg = document.createElement('img');
+
+
     
         const homeHeader = document.createElement('div');
         homeHeader.classList.add('homeHeader');
@@ -16,7 +20,7 @@ export function homeBuilder() {
 
             //p
             const homeP = document.createElement('p');
-            homeP.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+            homeP.textContent = 'We believe in the commitment to our community and in fostering long term relationships with local farmers and fishermen. Our menus reflect these connections, featuring local, seasonal produce and sustainably sourced seafood, meats and veggies.';
             homeHeader.appendChild(homeP);
         
         //award
@@ -30,7 +34,7 @@ export function homeBuilder() {
 
         //img
         const awardImg = document.createElement('img');
-        awardImg.src = '../src/images/award.png';
+        awardImg.src = './images/award.png';
         awardDiv.appendChild(awardImg);
 
         const awardInfoDiv = document.createElement('div');
@@ -41,15 +45,22 @@ export function homeBuilder() {
         awardInfoDiv.appendChild(awardH3);
 
         const awardP = document.createElement('p');
-        awardP.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-        ut labore et dolore magna aliqua. Volutpat blandit aliquam etiam erat velit scelerisque 
-        in dictum.`;
+        awardP.textContent = `Best family restaurant according to all family members. Only my family has been polled`;
         awardInfoDiv.appendChild(awardP);
 
+        const quote = document.createElement('div');
+        quote.classList.add('quote');
+        homeDiv.appendChild(quote);
 
+        const cite = document.createElement('cite');
+        cite.textContent = `Food is romantic. Soul. It's about putting everything in your heart onto the plate. Hoping it's perceived well. Honestly, it's about passion. It's about love.`;
+        quote.appendChild(cite);
 
-
-
-    
+        const citeName = document.createElement('p');
+        citeName.textContent = ` - Mai.`;
+        quote.appendChild(citeName);   
+        
+        cookImg.src = './images/mai.png';
+        homeDiv.appendChild(cookImg);
     return;
 }
